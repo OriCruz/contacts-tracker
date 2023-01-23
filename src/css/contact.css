@@ -1,0 +1,37 @@
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(116, 140, 171);
+    height: 100vh;
+    
+}
+.card{
+    margin: 2em 2em;
+    width: max-content;
+    height: max-content;
+    background-color: rgb(29, 45, 68);
+}
+.card:hover{
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+.card-image{
+    width: 23em;
+    padding: 1em 1em;
+}
+.card-content{
+    font-size: 2em;
+    color: rgb(240, 235, 216);
+}
+.phone::before{
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+.phone:hover{
+    box-shadow: inset 700px 0 0 0 #54b3d6;
+    color: white;
+}

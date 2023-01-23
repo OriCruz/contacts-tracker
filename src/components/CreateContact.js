@@ -1,5 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import {createContact} from '../services/contacts-api';
+import 'bulma/css/bulma.min.css';
 
 function Create() {
     const nav = useNavigate();
@@ -24,7 +25,7 @@ function Create() {
                 <input type='text' name='phoneNumber' id='dsc'/>
                 Photo:
                 <input type='text' name='img' id='dsc'/>
-                <input type='submit'/>
+                <input class='button is-primary' type='submit'/>
             </form>
         </div>
     );

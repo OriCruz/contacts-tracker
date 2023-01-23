@@ -1,6 +1,7 @@
 import {getContact, editContact} from '../services/contacts-api';
 import {useState, useEffect} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
+import 'bulma/css/bulma.min.css';
 
 const EditContact = ()=>{
     const {id} = useParams();
