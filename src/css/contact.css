@@ -11,10 +11,9 @@
     width: max-content;
     height: max-content;
     background-color: rgb(29, 45, 68);
-}
-.card:hover{
-    transform: translateY(-10px) rotate(1deg);
-    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    border: 10px;
+    border-style: inset;
+    border-color: rgb(240, 235, 216);
 }
 .card-image{
     width: 23em;

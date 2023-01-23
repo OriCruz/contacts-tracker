@@ -18,26 +18,27 @@ function Contact(){
     deleteContact(id);
     nav('/');
   }
-  const formattedPhoneNumber=(number)=>{
-    let result =number.replace(/(\d{3})(\d{3})(\d{4})/,'$1-$2-$3');
-    return result;
-  }
+  // const formattedPhoneNumber=(number)=>{
+  // let result =number.replace(/(\d{3})(\d{3})(\d{4})/,'$1-$2-$3');
+  //   let result =  number.substr(0,3)+"-"+number.substr(3,3)+"-"+number.substr(6,4);
+  //   return result;
+  // }
   return(
-    <div class='container is-fluid'>
-      <div class='card'>
-        <img class='card-image' src={contact.img}/>
-        <div class='card-content'>
+    <div className='container is-fluid'>
+      <div className='card'>
+        <img className='card-image' src={contact.img}/>
+        <div className='card-content'>
             <h1 >First Name: {contact.firstName}</h1>
             <h2 >Last Name: {contact.lastName}</h2>
-            <h4 className='phone'> Phone: {formattedPhoneNumber(contact.phoneNumber)}</h4>
+            <h4 className='phone'> Phone: {contact.phoneNumber}</h4>
         </div>
-        <div class='card-footer'>
-          <div class='card-footer-item'>
-            <button class='button is-warning'onClick={()=>{nav(`/${id}/edit`)}}>edit</button>
+        <div className='card-footer'>
+          <div className='card-footer-item'>
+            <button className='button is-warning'onClick={()=>{nav(`/${id}/edit`)}}>edit</button>
 
-          <button class='button is-danger' onClick={deleteTheContact}>delete</button>
+          <button className='button is-danger' onClick={deleteTheContact}>delete</button>
 
-          <button class='button is-success' onClick={()=>{nav('/')}}>Main page</button>
+          <button className='button is-success' onClick={()=>{nav('/')}}>Main page</button>
           </div>
           
         </div>

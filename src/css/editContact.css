@@ -1,0 +1,24 @@
+.title{
+    color: rgb(240, 235, 216);
+}
+.form{
+    width: 50%;
+    margin: 2em 2em;
+    border-radius: 0.50%;
+    border: 10px;
+    border-style: inset;
+    border-color: rgb(240, 235, 216);
+    background-color: rgb(29, 45, 68);
+}
+.label{
+ font-size: 20px;
+ padding: 1em 1em;
+ color: rgb(240, 235, 216);
+}
+.button{
+    margin-bottom: 1em;
+}
+.button:hover{
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: 3px 15px 8px -8px rgba(0, 0, 0, 0.3);
+}
