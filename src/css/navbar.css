@@ -1,0 +1,17 @@
+.navbar{
+    padding: 1em 1em;
+    background-color:rgb(29, 45, 68);
+}
+hr{
+    background-color: rgb(240, 235, 216);
+}
+.subtitle{
+    color: rgb(240, 235, 216);
+}
+.subtitle:hover{
+    background-color: rgb(240, 235, 216);
+    color: rgb(29, 45, 68);
+}
+.nav-item{
+    padding:2em;
+}

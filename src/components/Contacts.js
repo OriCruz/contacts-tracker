@@ -1,6 +1,7 @@
 import {getContacts} from '../services/contacts-api';
 import {useState, useEffect} from 'react';
-import Create from './CreateContact';
+import 'bulma/css/bulma.min.css';
+import '../css/conctacts.css'
 
 function Contacts(){
     const [contacts, setContacts]=useState([]);
@@ -12,14 +13,17 @@ function Contacts(){
 
     return(
         <div className='contacts'>
-            <h1> List of contacts:</h1>
-            <Create/>
+            <h1 className='title'>List of contacts:</h1>
 
             <ul className='list'>
                 {contacts.map((contact)=>{
                     return(
                         <li>
-                            <a href={`${contact._id}`} ><h3>{contact.firstName}</h3></a>
+                            <div className='contact-container'>
+                                <img className='contact-pic'  src={contact.img}/>
+                                <a href={`${contact._id}`} ><h3 className='contact-name'>{contact.firstName}</h3></a>
+                            </div>
+                            
                         </li>)
                 })}
             </ul>

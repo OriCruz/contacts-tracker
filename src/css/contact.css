@@ -1,9 +1,10 @@
+
 .container{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(116, 140, 171);
-    height: 100vh;
+    height: 100vmax;
     
 }
 .card{
@@ -16,7 +17,8 @@
     border-color: rgb(240, 235, 216);
 }
 .card-image{
-    width: 23em;
+    width: 25em;
+    height: 30em;
     padding: 1em 1em;
 }
 .card-content{
