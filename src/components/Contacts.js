@@ -2,6 +2,7 @@ import {getContacts} from '../services/contacts-api';
 import {useState, useEffect} from 'react';
 import 'bulma/css/bulma.min.css';
 import '../css/conctacts.css'
+import {Link} from 'react-router-dom';
 
 function Contacts(){
     const [contacts, setContacts]=useState([]);
@@ -21,7 +22,7 @@ function Contacts(){
                         <li>
                             <div className='contact-container'>
                                 <img className='contact-pic'  src={contact.img}/>
-                                <a href={`${contact._id}`} ><h3 className='contact-name'>{contact.firstName}</h3></a>
+                                <Link href={`${contact._id}`} ><h3 className='contact-name'>{contact.firstName}</h3></Link>
                             </div>
                             
                         </li>)

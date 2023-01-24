@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const baseURL='http://localhost:3001/contacts'//this is the url where we are getting the information. This is where we connect to our backend
-
+// const baseURL='http://localhost:3001/contacts'//this is the url where we are getting the information. This is where we connect to our backend
+const baseURL= "https://contacts-tracker-backend.onrender.com/"
 //Show all contacts
 export const getContacts=()=>{
     const URL=baseURL;
