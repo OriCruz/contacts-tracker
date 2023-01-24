@@ -22,7 +22,7 @@ function Contacts(){
                         <li>
                             <div className='contact-container'>
                                 <img className='contact-pic'  src={contact.img}/>
-                                <Link href={`${contact._id}`} ><h3 className='contact-name'>{contact.firstName}</h3></Link>
+                                <Link to={`${contact._id}`} ><h3 className='contact-name'>{contact.firstName}</h3></Link>
                             </div>
                             
                         </li>)
