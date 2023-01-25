@@ -11,8 +11,10 @@ function Create() {
         lastName: e.target.lastName.value,
         phoneNumber:e.target.phoneNumber.value,
         img:e.target.img.value}
-        createContact(contact);
-        nav('/');
+        createContact(contact).then(()=>{
+          nav('/');  
+        })
+        
     }
     return (
         <div className='container is-fluid'>

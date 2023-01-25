@@ -15,8 +15,10 @@ function Contact(){
   }, []);
 
   const deleteTheContact = ()=>{
-    deleteContact(id);
-    nav('/');
+    deleteContact(id).then(()=>{
+      nav('/');
+    })
+    
   }
   
   return(
