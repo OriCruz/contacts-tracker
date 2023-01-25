@@ -11,9 +11,10 @@ function Create() {
         lastName: e.target.lastName.value,
         phoneNumber:e.target.phoneNumber.value,
         img:e.target.img.value}
-        createContact(contact).then(()=>{
+
+        createContact(contact);
           nav('/');  
-        })
+       
         
     }
     return (
