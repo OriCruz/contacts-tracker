@@ -17,8 +17,10 @@ const EditContact = ()=>{
     const editTheContact=e=>{
         e.preventDefault();
         const updatedContact={firstName:e.target.firstName.value, lastName:e.target.lastName.value, phoneNumber:e.target.phoneNumber.value, img:e.target.img.value}
-        editContact(id, updatedContact);
-        nav(`/${id}`);
+        editContact(id, updatedContact).then(()=>{
+             nav(`/${id}`);
+        })
+       
     }
     return(
         <div className='container is-fluid'>
