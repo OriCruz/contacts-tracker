@@ -28,7 +28,9 @@ Edit contact page:
 - Axios
 
 ## Getting Started
-**Please keep in mind:** ==both front and back and are deployed on render using the free deployemnt option, so it might take a little to connect and load the information.==
+**Please keep in mind:** both front and back and are deployed on render using the free deployemnt option, so it might take a little to connect and load the information.
+
+[Backend repo](https://github.com/OriCruz/contacts-tracker-backend.git)
 
 [Server on render](https://contacts-tracker-backend.onrender.com/contacts)
 
