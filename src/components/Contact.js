@@ -18,11 +18,7 @@ function Contact(){
     deleteContact(id);
     nav('/');
   }
-  // const formattedPhoneNumber=(number)=>{
-  // let result =number.replace(/(\d{3})(\d{3})(\d{4})/,'$1-$2-$3');
-  //   let result =  number.substr(0,3)+"-"+number.substr(3,3)+"-"+number.substr(6,4);
-  //   return result;
-  // }
+  
   return(
     <div className='container is-fluid'>
       <div className='card'>
