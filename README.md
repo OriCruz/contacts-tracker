@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Contacts Tracker (Frontend)
+This full stack application keeps track of all your contacts' First and last names as well as their phone number and a desired image. 
+This repo is the front-end of the application, which takes care of everything the user interacts with. It takes care of displaying the contacts list, showing the individual information for each contact, lets the user edit and add new information to the contact's form. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How the app looks from the server side.
+![backendImg](./src/imgs-readme/contact-tracker-backend.png)
 
-## Available Scripts
+## How the app looks from the frontend/UI.
+Main page:
+![frontend-Main](./src/imgs-readme/contact-tracker-frontend-main.png)
 
-In the project directory, you can run:
+New contact page:
+![frontend-New](./src/imgs-readme/contact-tracker-frontend-newpng.png)
 
-### `npm start`
+Contact information page:
+![frontend-Contact](./src/imgs-readme/contact-tracker-frontend-contact.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Edit contact page:
+![frontend-Edit](./src/imgs-readme/contact-tracker-frontend-edit.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies used
+- Reactjs
+- CSS 
+- HTML
+- Bulma as CSS framework
+- React-dom
+- React-dom-router
+- Axios
 
-### `npm test`
+## Getting Started
+**Please keep in mind:** ==both front and back and are deployed on render using the free deployemnt option, so it might take a little to connect and load the information.==
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Server on render](https://contacts-tracker-backend.onrender.com/contacts)
 
-### `npm run build`
+[UI on render](https://contacts-tracker-frontend.onrender.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Fork and clone this repository:
+1. Fork it.
+2. Open your text editor of choice.
+3. Open terminal and paste the line below.
+`git clone https://github.com/OriCruz/contacts-tracker-frontend.git`
+4. To start the repo in your local machine use `npm start` in project's directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Unsolved problems and Future Enhancements
+**Some unsolved issues:**
+- There is no default image to display if the url or link the user adds to contacts don't work. 
+- Phone number is not formatted, so it looks like a string of numbers.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Future enhancements:**
+- User login/sinup page.
+- User authentication.
+- Add more CSS features.
+- Display list of contacts for each user with their own data.
+- Phone number formatting.
+- Display list of contacts in alphabetical order.
+- Display default image if the user's is link is broken.
